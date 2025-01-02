@@ -27,13 +27,13 @@ Simply copy the github link of this project into the Swift Package Manager and i
 Once you have your Swift package set up, adding FMobile as a dependency is as easy as adding it to the dependencies value of your <code>Package.swift</code>.
 ```
 dependencies: [
-    .package(url: "https://github.com/devftechhieutc/FMobile.git", .upToNextMajor(from: "0.0.1"))
+    .package(url: "https://github.com/devftechhieutc/FMobile-package", .upToNextMajor(from: "1.0.0"))
 ]
 ```
 
 - Write Import statement on your source file
 ```swift
-import FMobile
+import FMobile-package
 ```
 ### Add google services
 
