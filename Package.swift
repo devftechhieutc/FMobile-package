@@ -36,7 +36,6 @@ let package = Package(
                     "ZaloSDKCoreKit",
                 ],
                 linkerSettings: [
-                    .unsafeFlags(["-ObjC"])
                 ]
             ),
         .testTarget(
