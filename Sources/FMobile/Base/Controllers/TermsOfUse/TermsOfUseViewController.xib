@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsOfUseViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="imageBack" destination="1rN-kM-l0U" id="Hhv-Pw-EJ8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webPolicy" destination="bcS-e3-x9L" id="7MO-47-VQB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1rN-kM-l0U">
+                    <rect key="frame" x="4" y="70" width="40" height="34.333333333333329"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="7RH-Ra-c33"/>
+                        <constraint firstAttribute="height" constant="40" id="ets-dO-tap"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điều khoản &amp; chính sách" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggL-XL-Yuy">
+                    <rect key="frame" x="105" y="59" width="183" height="56"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bcS-e3-x9L">
+                    <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1rN-kM-l0U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="8ov-EQ-ngf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bcS-e3-x9L" secondAttribute="bottom" id="A0r-ft-yEp"/>
+                <constraint firstItem="ggL-XL-Yuy" firstAttribute="centerY" secondItem="1rN-kM-l0U" secondAttribute="centerY" id="NMy-9A-noV"/>
+                <constraint firstItem="bcS-e3-x9L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RJu-sD-F7I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bcS-e3-x9L" secondAttribute="trailing" id="WKn-7N-zDR"/>
+                <constraint firstItem="ggL-XL-Yuy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g1s-nJ-oJy"/>
+                <constraint firstItem="1rN-kM-l0U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="gOk-ye-E6Z"/>
+                <constraint firstItem="ggL-XL-Yuy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ltC-wi-iLv"/>
+                <constraint firstItem="bcS-e3-x9L" firstAttribute="top" secondItem="1rN-kM-l0U" secondAttribute="bottom" constant="12" id="vky-JZ-zr8"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
