@@ -34,8 +34,6 @@ let package = Package(
                     "ZingAnalytics",
                     "ZaloSDK",
                     "ZaloSDKCoreKit",
-                ],
-                linkerSettings: [
                 ]
             ),
         .testTarget(
